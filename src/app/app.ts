@@ -6,7 +6,7 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.css',
-  imports: [FormsModule],
+  imports: [PromptList],
 })
 
 export class App {
@@ -15,4 +15,5 @@ export class App {
   constructor(){
     setTimeout(() => (this.count.set(30)), 2000);
   }
-}
+}import { PromptList } from './prompts/prompt-list/prompt-list';
+
