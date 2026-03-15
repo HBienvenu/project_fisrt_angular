@@ -1,12 +1,18 @@
 import { Component, signal } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
+  imports: [FormsModule],
 })
+
 export class App {
-  protected readonly title = signal('project_anglar_first');
+  count = signal(10);
+
+  constructor(){
+    setTimeout(() => (this.count.set(30)), 2000);
+  }
 }
