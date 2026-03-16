@@ -1,6 +1,7 @@
 import { Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
+import { PromptList } from './prompts/prompt-list/prompt-list';
 
 @Component({
   selector: 'app-root',
@@ -8,12 +9,4 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.css',
   imports: [PromptList],
 })
-
-export class App {
-  count = signal(10);
-
-  constructor(){
-    setTimeout(() => (this.count.set(30)), 2000);
-  }
-}import { PromptList } from './prompts/prompt-list/prompt-list';
-
+export class App {}
