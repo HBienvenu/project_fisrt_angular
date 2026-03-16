@@ -1,10 +1,14 @@
 import { Component, input } from '@angular/core';
 import { Prompt } from '../prompt.model';
-import { ButtonModule } from 'primeng/button';
+import { Button } from 'primeng/button';
+import { Textarea } from 'primeng/textarea';
+import { Tab, Tabs, TabList } from 'primeng/tabs';
+import { Card } from 'primeng/card';
+import { Tag } from 'primeng/tag';
 
 @Component({
   selector: 'app-prompt-card',
-  imports: [ButtonModule],
+  imports: [Button, Textarea, Card, Tag],
   templateUrl: './prompt-card.html',
   styleUrl: './prompt-card.css',
 })

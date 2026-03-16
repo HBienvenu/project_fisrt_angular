@@ -11,6 +11,3 @@ body {
     padding-left: 1rem;
     padding-right: 1rem;
 }
-
-@import '/node_modules/primeflex/primeflex.css';
-@import "primeicons/primeicons.css";
