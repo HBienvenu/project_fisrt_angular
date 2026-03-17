@@ -32,6 +32,11 @@
       "id": 1,
       "username": "Système",
       "passwordHash": "$2b$10$placeholder.no.login.system.user.xYz123456789"
+    },
+    {
+      "id": 4,
+      "username": "Bienvenu",
+      "passwordHash": "$2b$10$SzQL.cCr79oW0kwk4sazb.Lzbs3J/Pli211rXuknq/m0LyVNgcNL6"
     }
   ],
   "prompts": [
@@ -70,6 +75,15 @@
       "userId": 3,
       "score": 0,
       "createdAt": "2025-02-01T08:45:00.000Z"
+    },
+    {
+      "id": 6,
+      "title": "fgb",
+      "content": "fthgfb",
+      "categoryId": 1,
+      "userId": 1,
+      "score": 0,
+      "createdAt": "2026-03-17T16:22:36.215Z"
     }
   ],
   "votes": [
