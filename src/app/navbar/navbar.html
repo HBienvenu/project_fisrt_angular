@@ -1,6 +1,6 @@
 <header class="shadow-1 p-3 mb-4">
   <div class="container flex justify-content-between align-items-center">
-    <a class="flex gap-2 align-items-center navbar-logo">
+    <a routerLink="/" class="flex gap-2 align-items-center navbar-logo">
       <img src="/images/logo.png" alt="logo" width="36" height="36" />
       Angular Project
     </a>
@@ -11,7 +11,7 @@
         (onClick)="toggleDarkMode()"
         [icon]="isDark() ? 'pi pi-sun' : 'pi pi-moon'"
       />
-      <p-button label="Ajouter" icon="pi pi-plus" size="small" />
+      <p-button label="Ajouter" routerLink="/prompts/create" icon="pi pi-plus" size="small" />
     </div>
   </div>
 </header>

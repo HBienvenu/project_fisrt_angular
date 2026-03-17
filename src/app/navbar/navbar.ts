@@ -2,13 +2,14 @@ import { Component, signal, effect, inject } from '@angular/core';
 import { NgOptimizedImage, isPlatformBrowser } from '@angular/common';
 import { Button } from 'primeng/button';
 import { PLATFORM_ID } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 const DARK_KEY = 'theme-dark';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [NgOptimizedImage, Button],
+  imports: [NgOptimizedImage, Button, RouterLink],
   templateUrl: './navbar.html',
   styleUrl: './navbar.css',
 })

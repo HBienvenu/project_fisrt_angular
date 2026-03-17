@@ -2,3 +2,9 @@
 
 @import 'primeflex/primeflex.css';
 @import "primeicons/primeicons.css";
+
+.p-inputtext.ng-invalid.ng-touched,
+.p-textarea.ng-invalid.ng-touched,
+.p-select.ng-invalid.ng-touched {
+    border-color: var(--p-inputtext-invalid-border-color);
+}
