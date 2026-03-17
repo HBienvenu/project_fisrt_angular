@@ -62,9 +62,9 @@ export class AuthForm {
         this.messageService.add({
           severity: 'error',
           summary: 'Erreur',
-          detail: 'Connexion impossible, réessayez.'
+          detail: 'Connexion impossible, réessayez.',
         })
-      }
+      },
     })
   }
 
