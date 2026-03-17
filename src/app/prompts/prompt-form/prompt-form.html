@@ -1,0 +1,29 @@
+<p-card>
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <div class="field">
+      <label for="title">Title</label>
+      <input id="title" formControlName="title" type="text" pInputText class="w-full" />
+    </div>
+    <div class="field">
+      <label for="content">Content</label>
+      <textarea
+        formControlName="content"
+        id="content"
+        type="text"
+        pTextarea
+        class="w-full"
+      ></textarea>
+    </div>
+    <div class="field">
+      <label for="category">Category</label>
+      <p-select
+        formControlName="categoryId"
+        inputId="category"
+        class="w-full"
+        optionValue="id"
+        optionLabel="name"
+        [options]="categories()"
+      />
+    </div>
+  </form>
+</p-card>

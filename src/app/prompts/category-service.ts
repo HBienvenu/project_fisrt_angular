@@ -1,19 +1,17 @@
-import { inject, Injectable } from '@angular/core';
-import { Prompt } from './prompt.model';
 import { HttpClient } from '@angular/common/http';
+import { inject, Injectable } from '@angular/core';
 import { environment } from '../../environments/environment';
+import { Category } from './category.model';
 
 @Injectable({
   providedIn: 'root',
 })
-export class PromptService {
+export class CategoryService {
   httpClient = inject(HttpClient);
-  baseUrl = environment.apiUrl + 'prompts';
+  baseUrl = environment.apiUrl + 'categories';
 
-  getPrompts() {
-    return this.httpClient.get<Prompt[]>(this.baseUrl);
-
-    // return [
+  getCategories() {
+    return this.httpClient.get<Category[]>(this.baseUrl);
     //   {
     //     id: 2,
     //     title: 'Post LinkedIn engageant',

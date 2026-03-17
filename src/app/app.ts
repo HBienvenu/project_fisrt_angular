@@ -8,6 +8,6 @@ import { Navbar } from './navbar/navbar';
   selector: 'app-root',
   templateUrl: './app.html',
   styleUrl: './app.css',
-  imports: [PromptList, Navbar],
+  imports: [PromptList, Navbar, RouterOutlet],
 })
 export class App {}
